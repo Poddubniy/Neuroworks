@@ -32,6 +32,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+# Расширение модели пользователя с помощью наследования AbstractUser
+AUTH_USER_MODEL = 'users.Users'
 
 # Application definition
 
