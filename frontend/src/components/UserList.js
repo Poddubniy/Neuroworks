@@ -4,6 +4,7 @@ const UserItem = ({user}) => {
             <td>{user.first_name}</td>
             <td>{user.last_name}</td>
             <td>{user.birthday}</td>
+            <td>{user.email}</td>
         </tr>
     )
 }
@@ -19,6 +20,9 @@ const UserList = ({users}) => {
         </th>
         <th>
           Birthday year
+        </th>
+        <th>
+          Email
         </th>
           { users.map((user) => <UserItem user={user} />)}
       </table>
